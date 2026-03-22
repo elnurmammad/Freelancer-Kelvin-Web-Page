@@ -19,25 +19,34 @@
 
     <header>
         <section class="bg-[#F1F1F1]">
-            <div class="container pt-[46px]">
-                <div class="flex gap-[610px]">
+            <div class="container pt-[40px] lg:pt-[46px]  px-[30px] lg:px-[215px]">
+                <div class="flex items-center justify-between">
                     <div class="flex ">
                         <h1 class="text-[32px] font-[700]">Kelvin</h1>
-                       <span class="w-[8px] h-[8px] border-[#FDA300] bg-[#FDA300] rounded-[100px] self-end "></span>
+                        <span class="w-[8px] h-[8px] border-[#FDA300] bg-[#FDA300] rounded-[100px] self-end "></span>
                     </div>
-                    <nav class="flex gap-[40px] text-[14px] font-[500] text-[#606060]">
-                        <p>Home</p>
-                        <p>Works</p>
-                        <p>Services</p>
-                        <p>About</p>
-                        <p>Contact</p>
-                    </nav>
+                    <nav
+                        class="hidden md:hidden lg:flex gap-[40px] text-[14px] font-[500] text-[#606060]  ease cursor-pointer">
+                        <p class="duration-400 hover:text-black">Home</p>
+                        <p class="duration-400 hover:text-black">Works</p>
+                        <p class="duration-400 hover:text-black">Services</p>
+                        <p class="duration-400 hover:text-black">About</p>
+                        <p class="duration-400 hover:text-black">Contact</p>
 
+                    </nav>
+                    <!-- menu button -->
+                    <button id="openMenu" class="self-baseline lg:hidden font-[900] w-[33px] h-[20px] text-3xl cursor-pointer">
+                        ☰
+                    </button>
                 </div>
-                <div class="grid grid-cols-2 items-center gap-[176px] mt-[76px]">
+                <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-[20px] lg:gap-[176px]  lg:mt-[76px]">
                     <div>
-                        <h2 class="text-[44px] font-[600] w-[500px] ">Kelvin Kramer Designer & Developer</h2>
-                        <p class="text-[14px] font-[400] leading-[200%] mt-[25px] w-[500px]">I’m a portrait, fashion and lifestyle
+                        <h2
+                            class="text-[27px] lg:text-[44px] font-[600] w-[300px] lg:w-[500px] max-w-[500px] mt-[50px] lg:mt-[0px] ">
+                            Kelvin Kramer Designer & Developer</h2>
+                        <p class="text-[14px] font-[400] leading-[200%] mt-[25px] lg:w-[500px] max-w-[500px]">I’m a
+                            portrait, fashion and
+                            lifestyle
                             photographer living In New York City. During my
                             thirteen
                             year tenure here.</p>
@@ -46,18 +55,44 @@
                     <div>
                         <img src="./images/intro.png" alt="">
                     </div>
+
                 </div>
 
+
             </div>
+
         </section>
 
 
+        <div id="mobileMenu"
+            class="fixed right-[0px] top-[0px] bg-white w-[250px] md:w-[290px] h-[700px] text-[#828282] p-15 hidden z-100">
+
+            <button id="closeMenu" class="absolute top-4 right-6 text-2xl font-[800] duration-500 hover:scale-120 cursor-pointer">
+                ✕
+            </button>
+
+            <ul class="space-y-6 mt-10 text-lg ">
+                <li class="duration-450 text-md md:text-lg hover:text-black"><a href="#home">Home</a></li>
+                <li class="duration-450 text-md md:text-lg hover:text-black"><a href="#how-its-made">Works</a>
+                </li>
+                <li class="duration-450 text-md md:text-lg hover:text-black"><a href="#our-products">Services</a>
+                </li>
+                <li class="duration-450 text-md md:text-lg hover:text-black"><a href="#top-sellers">About</a>
+                </li>
+                <li class="duration-450 text-md md:text-lg hover:text-black"><a href="#chocolate-is-loved">Contact</a>
+                </li>
+            </ul>
+
     </header>
+
+
+
+
 
     <main>
         <section>
-            <div class="container pt-[90px] pb-[90px]">
-                <div class="grid grid-cols-3 justify-between gap-[40px]">
+            <div class="container pt-[90px] pb-[90px] px-[30px] lg:px-[215px]">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between gap-[40px]">
                     <div>
                         <img src="./images/graphic 1.png" alt="">
                         <h3 class="text-[24px] font-[600] uppercase mt-[30px]">UI/UX Design</h3>
@@ -88,15 +123,21 @@
 
 
         <section class="bg-[#F1F1F1]">
-            <div class="px-[336px] pt-[90px]">
+            <div class="px-[30px] lg:px-[336px] pt-[90px]">
                 <h3 class="text-[34px] font-[600] text-center mb-[70px]">Portfolio</h3>
-                <img src="./images/online-fashion-store.jpg" alt="">
-                <p class="text-[18px] underline font-[400] text-center mt-[40px] mb-[90px]">Online fashion store -
+                <img src="./images/online-fashion-store.jpg" alt="online-fashion-store" class="mx-auto w-[930px] ">
+                <p
+                    class="text-[18px] underline font-[400] text-center mt-[40px] mb-[90px] duration-400 ease cursor-pointer hover:text-[#FDA300] ">
+                    Online fashion store -
                     Homepage</p>
-                <img src="./images/reebok-store.png" alt="">
-                <p class="text-[18px] underline font-[400] text-center mt-[40px] mb-[90px]">Reebok Store - Concept</p>
-                <img src="./images/braun-store.png" alt="">
-                <p class="text-[18px] underline font-[400] text-center mt-[40px] pb-[90px]">Braun Landing Page - Concept
+                <img src="./images/reebok-store.png" alt="reebok-store" class="mx-auto w-[930px] ">
+                <p
+                    class="text-[18px] underline font-[400] text-center mt-[40px] mb-[90px] duration-400 ease cursor-pointer hover:text-[#FDA300]">
+                    Reebok Store - Concept</p>
+                <img src="./images/braun-store.png" alt="braun-store" class="mx-auto w-[930px] ">
+                <p
+                    class="text-[18px] underline font-[400] text-center mt-[40px] pb-[90px] duration-400 ease cursor-pointer hover:text-[#FDA300]">
+                    Braun Landing Page - Concept
                 </p>
 
 
@@ -112,13 +153,13 @@
             </p>
             <p class="text-[18px] font-[400] text-center text-[#070707] mt-[5px]">You are welcome!</p>
             <div class="text-center mt-[40px]"><button
-                    class="text-[18px] font-[400] text-white rounded-[100px] p-[5px_10px] border border-black bg-[black] ">Send
+                    class="text-[18px] font-[400] text-white rounded-[100px] p-[5px_10px] border border-black duration-500 bg-[black] cursor-pointer hover:border-black hover:text-black hover:bg-white">Send
                     message</button></div>
-            <div class="flex gap-[60px] justify-center mt-[80px]">
-                <img src="./images/LinkedIn.png" alt="">
-                <img src="./images/Instargam.png" alt="">
-                <img src="./images/Behance.png" alt="">
-                <img src="./images/Dribble.png" alt="">
+            <div class="flex gap-[50px] lg:gap-[60px] justify-center mt-[80px]">
+                <img src="./images/LinkedIn.png" alt="" class="cursor-pointer duration-450 hover:scale-105">
+                <img src="./images/Instargam.png" alt="" class="cursor-pointer duration-450 hover:scale-105">
+                <img src="./images/Behance.png" alt="" class="cursor-pointer duration-450 hover:scale-105">
+                <img src="./images/Dribble.png" alt="" class="cursor-pointer duration-450 hover:scale-105">
 
             </div>
             <p class="text-[14px] font-[400] text-center text-[#828282] mt-[40px]">
@@ -128,7 +169,23 @@
         </section>
     </footer>
 
+    <!----Mobile Menu----->
 
+    <script>
+
+        const openMenu = document.getElementById("openMenu")
+        const closeMenu = document.getElementById("closeMenu")
+        const mobileMenu = document.getElementById("mobileMenu")
+
+        openMenu.addEventListener("click", () => {
+            mobileMenu.classList.remove("hidden")
+        })
+
+        closeMenu.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden")
+        })
+
+    </script>
 </body>
 
 </html>
